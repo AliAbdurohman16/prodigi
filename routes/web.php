@@ -8,4 +8,4 @@ Route::get('/', [Frontend\HomeController::class, 'index'])->name('/');
 
 Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [Backend\DashboardController::class, 'index'])->name('dashboard');

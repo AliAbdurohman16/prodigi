@@ -14,7 +14,7 @@
         <meta name="Version" content="v4.2.0" />
 
         <!-- favicon -->
-        <link rel="shortcut icon" href="{{ asset('frontend') }}/assets/images/prodigi-color.png" />
+        <link rel="shortcut icon" href="{{ asset('default/prodigi-color.png') }}" />
         
         <!-- Css -->
         <link href="{{ asset('frontend') }}/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
