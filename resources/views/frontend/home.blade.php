@@ -391,12 +391,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/syamsul.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Sam</a></h5>
@@ -409,12 +403,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/kesy.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Kesy</a></h5>
@@ -427,12 +415,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/chiko.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Chiko</a></h5>
@@ -445,12 +427,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/ali.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Ali</a></h5>
@@ -463,12 +439,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/sandi.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Sandi</a></h5>
@@ -481,12 +451,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/tomy.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Tomy</a></h5>
@@ -499,12 +463,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/bili.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Bili</a></h5>
@@ -517,12 +475,6 @@
                     <div class="card team team-primary text-center border-0">
                         <div class="position-relative">
                             <img src="{{ asset('frontend') }}/assets/images/teams/andre.jpeg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                            <ul class="list-unstyled mb-0 team-icon">
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="facebook" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="instagram" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="twitter" class="icons"></i></a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><i data-feather="linkedin" class="icons"></i></a></li>
-                            </ul><!--end icon-->
                         </div>
                         <div class="card-body py-3 px-0 content">
                             <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Andre</a></h5>
