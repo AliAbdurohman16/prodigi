@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend;
+use App\Http\Controllers\Backend;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('/');
+Route::get('/', [Frontend\HomeController::class, 'index'])->name('/');
 
 Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 
