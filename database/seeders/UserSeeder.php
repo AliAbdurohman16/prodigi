@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Illuminate\Support\Str;
 
 class UserSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $superadmin = User::create([
+            'id' => (string) Str::uuid(),
             'name' => 'Superadmin',
             'email' => 'superadmin@gmail.com',
             'email_verified_at' => now(),
@@ -23,6 +25,7 @@ class UserSeeder extends Seeder
         $superadmin->assignRole('superadmin');
 
         $admin = User::create([
+            'id' => (string) Str::uuid(),
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
@@ -32,6 +35,7 @@ class UserSeeder extends Seeder
         $admin->assignRole('admin');
 
         $user = User::create([
+            'id' => (string) Str::uuid(),
             'name' => 'User',
             'email' => 'user@gmail.com',
             'email_verified_at' => now(),
