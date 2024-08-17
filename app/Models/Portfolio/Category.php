@@ -28,8 +28,8 @@ class Category extends Model
         });
     }
 
-    public function posts()
+    public function Posts()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'portfolio_category_id');
     }
 }

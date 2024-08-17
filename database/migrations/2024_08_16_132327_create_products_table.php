@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->uuid('product_category_id')->nullable()->index();
-            $table->foreign('product_category_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('product_category_id')->references('id')->on('product_categories')->onDelete('cascade');
             $table->text('description');
             $table->timestamps();
         });
