@@ -16,6 +16,7 @@
         <!-- Icons Css -->
         <link href="{{ asset('backend') }}/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="{{ asset('backend') }}/assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        @yield('css')
         <!-- Style Css-->
         <link href="{{ asset('backend') }}/assets/css/style.min.css" class="theme-opt" rel="stylesheet" type="text/css" />
 
@@ -49,11 +50,11 @@
         <!-- page-wrapper -->
         
         <!-- javascript -->
-        <!-- JAVASCRIPT -->
+        <script src="{{ asset('backend') }}/assets/js/jquery.min.js"></script>
         <script src="{{ asset('backend') }}/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="{{ asset('backend') }}/assets/libs/feather-icons/feather.min.js"></script>
         <script src="{{ asset('backend') }}/assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="{{ asset('backend') }}/assets/libs/apexcharts/apexcharts.min.js"></script>
+        @yield('javascript')
         <!-- Main Js -->
         <script src="{{ asset('backend') }}/assets/js/plugins.init.js"></script>
         <script src="{{ asset('backend') }}/assets/js/app.js"></script>

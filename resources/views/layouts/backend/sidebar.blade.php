@@ -15,7 +15,7 @@
                 <a href="javascript:void(0)"><i class="ti ti-camera me-2"></i>Portofolio</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="">Kategori Portofolio</a></li>
+                        <li><a href="{{ route('portfolio-categories.index') }}">Kategori Portofolio</a></li>
                         <li><a href="">Postingan Portofolio</a></li>
                     </ul>
                 </div>
