@@ -41,6 +41,8 @@ class PostController extends Controller
             'title' => 'required|max:255',
             'portfolio_category_id' => 'required',
             'description' => 'required',
+        ], [
+            'portfolio_category_id.required' => 'The category field is required.',
         ]);
 
         if ($request->hasFile('image')) {
@@ -87,6 +89,8 @@ class PostController extends Controller
             'title' => 'required|max:255',
             'portfolio_category_id' => 'required',
             'description' => 'required',
+        ], [
+            'portfolio_category_id.required' => 'The category field is required.',
         ]);
 
         if ($request->hasFile('image')) {
