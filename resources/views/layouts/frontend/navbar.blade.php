@@ -50,7 +50,7 @@
             <ul class="navigation-menu nav-light">
                 <li><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
                 <li><a href="#about" class="sub-menu-item">Tentang</a></li>
-                <li><a href="#services" class="sub-menu-item">Produk</a></li>
+                <li><a href="#services" class="sub-menu-item">Layanan</a></li>
                 <li><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>
                 <li><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
             </ul><!--end navigation menu-->
