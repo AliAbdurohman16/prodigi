@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Hero Start -->
-<section class="bg-half-170 d-table w-100" style="background: url('{{ asset('frontend/assets/images/bg-detail.jpg') }}') center center;">
+<section class="bg-half-170 d-table w-100" style="background: url('{{ asset('frontend/assets/images/bg-detail.jpeg') }}') center center;">
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row mt-5 justify-content-center">
