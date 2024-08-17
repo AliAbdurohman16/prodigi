@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('slug');
             $table->uuid('product_category_id')->nullable()->index();
             $table->foreign('product_category_id')->references('id')->on('product_categories')->onDelete('cascade');
+            $table->string('price');
             $table->text('description');
             $table->timestamps();
         });
