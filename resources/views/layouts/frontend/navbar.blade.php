@@ -50,11 +50,9 @@
             <ul class="navigation-menu nav-light">
                 <li><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
                 <li><a href="#about" class="sub-menu-item">Tentang</a></li>
-                <li><a href="#services" class="sub-menu-item">Layanan</a></li>
-                <li><a href="#teams" class="sub-menu-item">Tim Kerja</a></li>
+                <li><a href="#services" class="sub-menu-item">Produk</a></li>
+                <li><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>
                 <li><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
-                <li><a href="#partner" class="sub-menu-item">Partner</a></li>
-                <li><a href="#client" class="sub-menu-item">Client</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->

@@ -16,7 +16,7 @@
 
             <nav aria-label="breadcrumb" class="d-inline-block">
                 <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
-                    <li class="breadcrumb-item text-capitalize"><a href="{{ route('portfolio-posts.index') }}">Edukasi</a></li>
+                    <li class="breadcrumb-item text-capitalize"><a href="{{ route('portfolio-posts.index') }}">@yield('title')</a></li>
                     <li class="breadcrumb-item text-capitalize active" aria-current="page">Tambah Data</li>
                 </ul>
             </nav>

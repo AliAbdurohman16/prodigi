@@ -20,7 +20,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a href=""><i class="ti ti-users me-2"></i>Tim</a></li>
+            <li><a href="{{ route('teams.index') }}"><i class="ti ti-users me-2"></i>Data Tim</a></li>
             <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="ti ti-brand-gravatar me-2"></i>Logo Partner & Client</a>
                 <div class="sidebar-submenu">
