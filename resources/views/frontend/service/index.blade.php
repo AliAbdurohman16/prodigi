@@ -17,7 +17,7 @@
             <nav aria-label="breadcrumb" class="d-inline-block">
                 <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
                     <li class="breadcrumb-item"><a href="{{ route('/') }}">Prodigi</a></li>
-                    <li class="breadcrumb-item"><a href="">Page</a></li>
+                    <li class="breadcrumb-item"><a href="">Layanan</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $service->title }}</li>
                 </ul>
             </nav>
