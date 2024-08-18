@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="footer-py-60">
                     <div class="row">
-                        <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2 mb-4">
                             <a href="{{ route('/') }}" class="logo-footer">
                                 <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" height="50" alt="">
                             </a>
