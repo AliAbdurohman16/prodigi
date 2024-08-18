@@ -18,7 +18,7 @@
                             </ul>end icon -->
                         </div><!--end col-->
                 
-                        <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mb-4">
                             <h5 class="footer-head">Perusahaan</h5>
                             <ul class="list-unstyled footer-list mt-4">
                                 <li><a href="{{ route('page.index', 'tentang') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tentang</a></li>
@@ -27,7 +27,7 @@
                             </ul>
                         </div><!--end col-->
                 
-                        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mb-4">
                             <h5 class="footer-head">Layanan</h5>
                             <ul class="list-unstyled footer-list mt-4">
                                 <?php $services = App\Models\Service::all(); ?>
