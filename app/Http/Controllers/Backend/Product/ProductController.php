@@ -46,6 +46,7 @@ class ProductController extends Controller
             'product_service_id' => 'required',
             'product_category_id' => 'required',
             'price' => 'required',
+            'short_description' => 'required',
             'description' => 'required',
         ], [
             'product_service_id.required' => 'The service field is required.',
@@ -98,6 +99,7 @@ class ProductController extends Controller
             'product_service_id' => 'required',
             'product_category_id' => 'required',
             'price' => 'required',
+            'short_description' => 'required',
             'description' => 'required',
         ], [
             'product_service_id.required' => 'The service field is required.',

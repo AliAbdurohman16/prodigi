@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend;
 Route::get('/', [Frontend\HomeController::class, 'index'])->name('/');
 Route::get('page/{slug}', [Frontend\PageController::class, 'index'])->name('page.index');
 Route::get('service/{slug}', [Frontend\ServiceController::class, 'index'])->name('service.index');
+Route::get('product', [Frontend\ProductController::class, 'index'])->name('product.index');
 Route::get('portfolio', [Frontend\PortofolioController::class, 'index'])->name('portfolio.index');
 Route::get('portfolio/detail/{id}', [Frontend\PortofolioController::class, 'show'])->name('portfolio.show');
 Route::get('team', [Frontend\TeamController::class, 'index'])->name('team.index');

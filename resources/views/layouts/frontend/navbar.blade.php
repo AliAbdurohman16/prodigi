@@ -59,6 +59,7 @@
                         @endforeach
                     </ul>
                 </li>
+                <li class="{{ request()->is('product/*') ? 'active' : '' }}"><a href="{{ route('product.index') }}" class="sub-menu-item">Produk</a></li>
                 <li class="{{ request()->is('teams') ? 'active' : '' }}"><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>
                 <li class="{{ request()->is('portfolio/*') ? 'active' : '' }}"><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
             </ul><!--end navigation menu-->

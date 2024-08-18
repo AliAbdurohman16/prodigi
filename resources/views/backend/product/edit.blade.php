@@ -111,6 +111,17 @@
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Deskripsi <span class="text-danger">*</span></label>
+                                        <textarea name="short_description" id="short_description" class="form-control @error('short_description') is-invalid @enderror" placeholder="Deskripsi Singkat">{{ $product->short_description }}</textarea>
+                                        @error('short_description')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Deskripsi <span class="text-danger">*</span></label>
                                         <textarea name="description" id="summernote" class="form-control @error('description') is-invalid @enderror" placeholder="Deskripsi">{{ $product->description }}</textarea>
                                         @error('description')
                                             <div class="invalid-feedback">
