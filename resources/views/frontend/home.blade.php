@@ -80,7 +80,7 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Layanan</h4>
-                        <p class="para text-muted mb-0">Menawarkan solusi jaringan dan keamanan siber untuk melindungi data Anda dan memastikan konektivitas yang aman dan handal.</p>
+                        <p class="para-desc mx-auto text-muted mb-0">Kami menawarkan berbagai solusi inovatif yang dirancang untuk memberikan hasil terbaik sesuai kebutuhan Anda. Dari keamanan siber hingga pengembangan aplikasi, layanan kami siap mendukung setiap langkah perjalanan digital Anda.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
