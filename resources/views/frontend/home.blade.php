@@ -80,19 +80,20 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Layanan</h4>
+                        <p class="para text-muted mb-0">Menawarkan solusi jaringan dan keamanan siber untuk melindungi data Anda dan memastikan konektivitas yang aman dan handal.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-server-network"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Jaringan Komputer & Keamanan Cyber</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Menyediakan solusi lengkap untuk jaringan komputer dan keamanan siber, memastikan perlindungan data dan integritas sistem Anda.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-server-network"></i>
@@ -101,13 +102,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-crosshairs"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Sistem Akses Control, Keamanan dan Absensi</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Mengelola akses, meningkatkan keamanan, dan memonitor absensi dengan solusi yang terintegrasi dan mudah digunakan.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-crosshairs"></i>
@@ -116,13 +117,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-hdd"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Solusi Otomasi Perangkat Keras</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Meningkatkan efisiensi operasional dengan otomatisasi perangkat keras yang canggih dan dapat disesuaikan dengan kebutuhan spesifik Anda.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-hdd"></i>
@@ -131,13 +132,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-monitor"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Pembuatan Aplikasi Web, Desktop dan Mobile</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Mengembangkan aplikasi kustom untuk web, desktop, dan mobile yang sesuai dengan kebutuhan bisnis Anda dan meningkatkan produktivitas.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-monitor"></i>
@@ -146,13 +147,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-processor"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Instalasi Perangkat Keras dan Lunak</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Menangani instalasi perangkat keras dan lunak dengan profesional untuk memastikan sistem Anda berjalan dengan optimal dan bebas dari gangguan.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-processor"></i>
@@ -161,13 +162,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-users-alt"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Maintenance Perangkat Keras dan Lunak</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Memastikan perangkat keras dan lunak Anda berfungsi optimal dengan layanan pemeliharaan rutin dan dukungan teknis yang handal.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-users-alt"></i>
@@ -176,13 +177,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-file-alt"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Pembuatan Perangkat Keras Custom</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Menciptakan perangkat keras custom yang disesuaikan dengan kebutuhan spesifik Anda untuk mendukung operasi bisnis yang efisien.</p> 
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-file-alt"></i>
@@ -191,13 +192,13 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
                         <span class="h1 icon-color">
                             <i class="uil uil-robot"></i>
                         </span>
                         <div class="card-body p-0 content">
                             <h5>⁠Implementasi Kecerdasan Buatan (AI) & Machine Learning</h5>
-                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
+                            <p class="para text-muted mb-0">Mengintegrasikan AI dan Machine Learning untuk memberikan solusi cerdas yang meningkatkan efisiensi dan inovasi bisnis Anda.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-robot"></i>
@@ -306,6 +307,7 @@
                     <div class="section-title text-center mb-4 pb-2">
                         <h6 class="text-primary">Proses Kerja</h6>
                         <h4 class="title mb-4">Bagaimana cara kami bekerja?</h4>
+                        <p class="para-desc mx-auto text-muted mb-0">Kami mengikuti pendekatan yang terstruktur dan transparan dalam setiap proyek yang kami kerjakan.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -383,6 +385,35 @@
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
+
+            <!-- Product Start -->
+            <div class="row mt-4 pt-2 justify-content-center mb-3">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Produk</h4>
+                        <p class="para-desc mx-auto text-muted mb-0">Temukan berbagai produk unggulan kami yang dirancang untuk memenuhi berbagai kebutuhan Anda.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                @if(count($products) > 0)
+                @foreach ($products as $product)
+                <div class="col-lg-4 mb-2">
+                    <div class="card shadow rounded border-0 overflow-hidden">
+                        <img src="{{ asset('storage/product/' . $product->image) }}" class="img-fluid" alt="image">
+                        <div class="card-body">
+                            <a href="{{ route('product.show', $product->slug) }}" class="text-dark h4">{{ $product->name }}</a>
+                            <p class="text-muted">{{ $product->short_description }}</p>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+                @else
+                    <h3 class="text-center">Tidak ada produk.</h3>
+                @endif
+            </div>
+            <!-- Product End -->
         </div><!--end container-->
     </section><!--end section-->
 
