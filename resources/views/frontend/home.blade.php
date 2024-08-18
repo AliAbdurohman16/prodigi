@@ -431,34 +431,34 @@
 
         <div class="slider-partner">
             <div class="slider-item-partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/zkteco.png" class="avatar" width="80px" height="50px" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/unv.png" class="avatar" width="80px" height="50px" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/mikrotik.png" class="avatar" width="100px" height="50px" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/huawei-enterprise.png" class="avatar" width="150px" height="50px" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/dell.png" class="avatar" width="70px" height="70px"alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/hikvision.png" class="avatar" width="140px" height="40px" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/cisco.png" class="avatar" width="80px" height="60px"alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/zkteco.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/unv.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/mikrotik.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/huawei-enterprise.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/dell.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/hikvision.png" class="avatar" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/cisco.png" class="avatar" alt="partner">
             </div>
         </div>
         <div class="slider-client">
             <div class="slider-item-client">
-                <img src="{{ asset('frontend') }}/assets/images/client/ciputra.png" class="avatar" width="100px" height="80px" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/dapen-telkom.png" class="avatar" width="130px" height="100px" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/logo-telkom-indonesia.png" class="avatar" width="100px" height="75px" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/ind-power.png" class="avatar" width="100px" height="100px" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/pt-system-integrators.png" class="avatar" width="100px" height="100px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/kemenhub.png" class="avatar" width="100px" height="90px" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bangunindo.png" class="avatar" width="100px" height="60px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/jalesveva-jayamahe.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/ciputra.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/dapen-telkom.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/logo-telkom-indonesia.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/ind-power.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/pt-system-integrators.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/kemenhub.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bangunindo.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/jalesveva-jayamahe.png" class="avatar" alt="client">
                 <img src="{{ asset('frontend') }}/assets/images/client/korps-brimob.png" class="avatar" width="70px" height="80px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/oli-ebike-systems.png" class="avatar" width="100px" height="100px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/paradigm.png" class="avatar" width="100px" height="100px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/telkom-property.png" class="avatar" width="120px" height="100px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/totalpersadaindonesia.png" class="avatar" width="100px" height="70px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/united-tractors-logo.png" class="avatar" width="140px" height="100px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bumn.png" class="avatar" width="150px" height="70px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bksda.png" class="avatar" width="150px" height="70px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/cnlc.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/oli-ebike-systems.png" class="avatar"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/paradigm.png" class="avatar"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/telkom-property.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/totalpersadaindonesia.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/united-tractors-logo.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bumn.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bksda.png" class="avatar" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/cnlc.png" class="avatar"alt="client">
             </div>
         </div>
     </section><!--end section-->

@@ -45,6 +45,8 @@
 
 .slider-item-partner img {
     margin: 0 60px;
+    width: auto;
+    height: 60px;
 }
 
 /*  */
@@ -87,6 +89,8 @@
 
 .slider-item-client img {
     margin: 0 60px;
+    width: auto;
+    height: 100px;
 }
 
 @media (max-width: 576px) {
