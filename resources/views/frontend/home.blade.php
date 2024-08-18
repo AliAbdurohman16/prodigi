@@ -121,7 +121,7 @@
                             <i class="uil uil-hdd"></i>
                         </span>
                         <div class="card-body p-0 content">
-                            <h5>Solusi Otomasi perangkat keras</h5>
+                            <h5>Solusi Otomasi Perangkat Keras</h5>
                             <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
