@@ -51,7 +51,7 @@
                 <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
                 <li class="{{ request()->is('page/tentang') ? 'active' : '' }}"><a href="{{ route('page.index', 'tentang') }}" class="sub-menu-item">Tentang</a></li>
                 <li class="has-submenu parent-menu-item {{ request()->is('service/*') ? 'active' : '' }}">
-                    <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
+                    <a href="">Layanan</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <?php $services = App\Models\Service::all(); ?>
                         @foreach ($services as $service)

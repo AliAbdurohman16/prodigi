@@ -14,14 +14,11 @@
                         <h4 class="text-white-50">Selamat Datang Di Layanan Kami</h4>
                         <h4 class="heading text-white mb-3 title-dark">Integrator IT Profesional </h4>
                         <p class="para-desc text-white-50">Kita siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
-                        <div class="mt-4 pt-2">
-                            <a href="javascript:void(0)" class="btn btn-light">Gabung Sekarang</a>
-                        </div>
                     </div>
                 </div><!--end col-->
 
-                <div class="col-lg-4 col-md-6 mt-5 mt-sm-0">
-                    <img src="{{ asset('frontend') }}/assets/images/hero-with-laptop.png" class="img-fluid" alt="hero">
+                <div class="col-lg-4 col-md-6 mt-5 mt-sm-0 hero-img">
+                    <img src="{{ asset('frontend') }}/assets/images/hero-with-laptop.png" class="img-fluid d-block w-100" alt="hero">
                 </div>
             </div><!--end row-->
             

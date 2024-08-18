@@ -88,3 +88,27 @@
 .slider-item-client img {
     margin: 0 60px;
 }
+
+@media (max-width: 576px) {
+    .slider-partner:before,
+    .slider-partner::after {
+        width: 70px;
+    }
+
+    .slider-client:before,
+    .slider-client::after {
+        width: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-partner:before,
+    .slider-partner::after {
+        width: 100px;
+    }
+
+    .slider-client:before,
+    .slider-client::after {
+        width: 100px;
+    }
+}
