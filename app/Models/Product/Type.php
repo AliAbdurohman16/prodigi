@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
-class Service extends Model
+class Type extends Model
 {
     use HasFactory;
 
-    protected $table = 'product_services';
+    protected $table = 'product_types';
 
     protected $keyType = 'string';
     public $incrementing = false;
@@ -30,6 +30,6 @@ class Service extends Model
 
     public function Product()
     {
-        return $this->hasMany(Product::class, 'product_service_id');
+        return $this->hasMany(Product::class, 'product_type_id');
     }
 }

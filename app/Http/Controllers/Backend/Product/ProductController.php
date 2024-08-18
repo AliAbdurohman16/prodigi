@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend\Product;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product\Product;
-use App\Models\Product\Service;
+use App\Models\Product\Type;
 use App\Models\Product\Category;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -28,7 +28,7 @@ class ProductController extends Controller
     public function create()
     {
         $data = [
-            'services' => Service::all(),
+            'types' => Type::all(),
             'categories' => Category::all()
         ];
 
@@ -43,13 +43,13 @@ class ProductController extends Controller
         $data = $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'name' => 'required|max:255',
-            'product_service_id' => 'required',
+            'product_type_id' => 'required',
             'product_category_id' => 'required',
             'price' => 'required',
             'short_description' => 'required',
             'description' => 'required',
         ], [
-            'product_service_id.required' => 'The service field is required.',
+            'product_type_id.required' => 'The type field is required.',
             'product_category_id.required' => 'The category field is required.',
         ]);
 
@@ -79,7 +79,7 @@ class ProductController extends Controller
     {
         $data = [
             'product' => Product::find($id),
-            'services' => Service::all(),
+            'types' => Type::all(),
             'categories' => Category::all(),
         ];
 
@@ -96,13 +96,13 @@ class ProductController extends Controller
         $data = $request->validate([
             'image' => 'image|mimes:jpeg,png,jpg|max:2048',
             'name' => 'required|max:255',
-            'product_service_id' => 'required',
+            'product_type_id' => 'required',
             'product_category_id' => 'required',
             'price' => 'required',
             'short_description' => 'required',
             'description' => 'required',
         ], [
-            'product_service_id.required' => 'The service field is required.',
+            'product_type_id.required' => 'The type field is required.',
             'product_category_id.required' => 'The category field is required.',
         ]);
 

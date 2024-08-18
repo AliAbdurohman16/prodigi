@@ -4,19 +4,19 @@ namespace App\Http\Controllers\Backend\Product;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Product\Service;
+use App\Models\Product\Type;
 use Illuminate\Support\Str;
 
-class ServiceController extends Controller
+class TypeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data['services'] =  Service::all();
+        $data['types'] =  Type::all();
         
-        return view('backend.product.services.index', $data);
+        return view('backend.product.types.index', $data);
     }
 
     /**
@@ -35,9 +35,9 @@ class ServiceController extends Controller
         $data = $request->all();
         $data['slug'] = Str::slug($data['title']);
 
-        Service::create($data);
+        Type::create($data);
 
-        return redirect('product-services')->with('message', 'Berhasil ditambahkan!');
+        return redirect('product-types')->with('message', 'Berhasil ditambahkan!');
     }
 
     /**
@@ -61,14 +61,14 @@ class ServiceController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $service = Service::find($id);
+        $type = Type::find($id);
 
         $data = $request->all();
         $data['slug'] = Str::slug($data['title']);
 
-        $service->update($data);
+        $type->update($data);
 
-        return redirect('product-services')->with('message', 'Berhasil diubah!');
+        return redirect('product-types')->with('message', 'Berhasil diubah!');
     }
 
     /**
@@ -76,7 +76,7 @@ class ServiceController extends Controller
      */
     public function destroy(string $id)
     {
-        Service::find($id)->delete();
+        Type::find($id)->delete();
 
         return response()->json(['message' => 'Berhasil dihapus!']);
     }

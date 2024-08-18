@@ -51,7 +51,7 @@
                                         <th class="text-center p-3" style="width: 5%;">{{ $loop->iteration }}</th>
                                         <td class="p-3"><img src="{{ asset('storage/product/' . $product->image) }}" width="70px" class="img-fluid" alt="image"></td>
                                         <td class="p-3">{{ $product->name }}</td>
-                                        <td class="p-3">{{ $product->Service->title }}</td>
+                                        <td class="p-3">{{ $product->Type->title }}</td>
                                         <td class="p-3">{{ $product->Category->title }}</td>
                                         <td class="p3">Rp {{ number_format($product->price, 0, ',', '.') }}</td>
                                         <td style="width: 25%;">

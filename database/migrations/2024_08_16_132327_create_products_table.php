@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('slug');
             $table->uuid('product_category_id')->nullable()->index();
             $table->foreign('product_category_id')->references('id')->on('product_categories')->onDelete('cascade');
-            $table->uuid('product_service_id')->nullable()->index();
-            $table->foreign('product_service_id')->references('id')->on('product_services')->onDelete('cascade');
+            $table->uuid('product_type_id')->nullable()->index();
+            $table->foreign('product_type_id')->references('id')->on('product_types')->onDelete('cascade');
             $table->string('price');
             $table->string('short_description');
             $table->text('description');

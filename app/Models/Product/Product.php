@@ -28,9 +28,9 @@ class Product extends Model
         });
     }
 
-    public function Service()
+    public function Type()
     {
-        return $this->belongsTo(Service::class, 'product_service_id');
+        return $this->belongsTo(Type::class, 'product_type_id');
     }
 
     public function Category()

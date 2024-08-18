@@ -64,15 +64,15 @@
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Jenis <span class="text-danger">*</span></label>
-                                        <select class="form-control select2-service @error('product_service_id') is-invalid @enderror" name="product_service_id" id="product_service_id">
+                                        <select class="form-control select2-type @error('product_type_id') is-invalid @enderror" name="product_type_id" id="product_type_id">
                                             <option value="">Pilih Jenis</option>
-                                            @foreach ($services as $service)
-                                                <option value="{{ $service->id }}" {{ $product->product_service_id == $service->id ? 'selected' : '' }}>
-                                                    {{ $service->title  }}
+                                            @foreach ($types as $type)
+                                                <option value="{{ $type->id }}" {{ $product->product_type_id == $type->id ? 'selected' : '' }}>
+                                                    {{ $type->title  }}
                                                 </option>
                                             @endforeach
                                         </select>
-                                        @error('product_service_id')
+                                        @error('product_type_id')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -151,7 +151,8 @@
 <script src="{{ asset('backend') }}/assets/libs/summernote/summernote.min.js"></script>
 <script>
     $(document).ready(function() {
-        $('.select2').select2();
+        $('.select2-type').select2();
+        $('.select2-category').select2();
         $('#summernote').summernote({
             height: 300,
             placeholder: 'Tulis sesuatu di sini...',

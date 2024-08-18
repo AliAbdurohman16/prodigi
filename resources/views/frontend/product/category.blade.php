@@ -8,7 +8,7 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-12 text-center">
                 <div class="pages-heading">
-                    <h4 class="title text-white title-dark mb-0"> Produk </h4>
+                    <h4 class="title text-white title-dark mb-0"> Kategori - {{ $category->title }} </h4>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
@@ -17,7 +17,8 @@
             <nav aria-label="breadcrumb" class="d-inline-block">
                 <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
                     <li class="breadcrumb-item"><a href="{{ route('/') }}">Prodigi</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produk</li>
+                    <li class="breadcrumb-item"><a href="{{ route('product.index') }}">Produk</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kategori</li>
                 </ul>
             </nav>
         </div>

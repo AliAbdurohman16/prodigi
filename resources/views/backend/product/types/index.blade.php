@@ -43,14 +43,14 @@
                             </thead>
                             <tbody>
                                 <!-- Start -->
-                                @foreach($services as $service)
+                                @foreach($types as $type)
                                     <tr>
                                         <th class="text-center p-3" style="width: 5%;">{{ $loop->iteration }}</th>
-                                        <td class="p-3">{{ $service->title }}</td>
-                                        <td class="p-3">{{ $service->slug }}</td>
+                                        <td class="p-3">{{ $type->title }}</td>
+                                        <td class="p-3">{{ $type->slug }}</td>
                                         <td style="width: 25%;">
-                                            <button type="button" class="btn btn-warning btn-sm mb-2" data-bs-toggle="modal" data-bs-target="#edit-modal{{ $service->id }}"><i class="fa-solid fa-pen"></i> Edit</button>
-                                            <button type="button" class="btn btn-danger btn-sm mb-2 btn-delete" data-id="{{ $service->id }}"><i class="fa-solid fa-trash"></i> Hapus</button>
+                                            <button type="button" class="btn btn-warning btn-sm mb-2" data-bs-toggle="modal" data-bs-target="#edit-modal{{ $type->id }}"><i class="fa-solid fa-pen"></i> Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm mb-2 btn-delete" data-id="{{ $type->id }}"><i class="fa-solid fa-trash"></i> Hapus</button>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -74,7 +74,7 @@
                 <h5 class="modal-title" id="LoginForm-title">Tambah Data</h5>
                 <button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
             </div>
-            <Form action="{{ route('product-services.store') }}" method="POST">
+            <Form action="{{ route('product-types.store') }}" method="POST">
                 @csrf
                 <div class="modal-body">
                     <div class="row">
@@ -97,15 +97,15 @@
 <!-- Modal Add End -->
 
 <!-- Modal Edit -->
-@foreach ($services as $service)
-<div class="modal fade" id="edit-modal{{ $service->id }}" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+@foreach ($types as $type)
+<div class="modal fade" id="edit-modal{{ $type->id }}" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded shadow border-0">
             <div class="modal-header border-bottom">
                 <h5 class="modal-title" id="LoginForm-title">Edit Data</h5>
                 <button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
             </div>
-            <Form action="{{ route('product-services.update', $service->id) }}" method="POST">
+            <Form action="{{ route('product-types.update', $type->id) }}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="modal-body">
@@ -113,7 +113,7 @@
                         <div class="col-md-12">
                             <div class="mb-3">
                                 <label class="form-label">Nama Jenis<span class="text-danger">*</span></label>
-                                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{ $service->title }}" placeholder="Nama Kategori" required>
+                                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{ $type->title }}" placeholder="Nama Kategori" required>
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: "product-services/" + id,
+                    url: "product-types/" + id,
                     type: 'DELETE',
                     data: {
                         "id": id,
