@@ -87,7 +87,7 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-server-network"></i>
                         </span>
@@ -102,7 +102,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-crosshairs"></i>
                         </span>
@@ -117,7 +117,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-hdd"></i>
                         </span>
@@ -132,7 +132,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-monitor"></i>
                         </span>
@@ -147,7 +147,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-processor"></i>
                         </span>
@@ -162,7 +162,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-users-alt"></i>
                         </span>
@@ -177,7 +177,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-file-alt"></i>
                         </span>
@@ -192,7 +192,7 @@
                 </div><!--end col-->
                 
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0" style="height: 400px">
+                    <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
                             <i class="uil uil-robot"></i>
                         </span>
