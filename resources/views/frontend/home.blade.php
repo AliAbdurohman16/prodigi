@@ -277,7 +277,7 @@
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset190.svg" class="avatar avatar-small" alt="">
                         <h2 class="mb-0 mt-4"><span class="counter-value" data-target="96">96</span>%</h2>
-                        <h6 class="counter-head text-muted">Happy Client</h6>
+                        <h3 class="counter-head text-muted h6">Happy Client</h3>
                     </div><!--end counter box-->
                 </div>
 
@@ -285,7 +285,7 @@
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset192.svg" class="avatar avatar-small" alt="">
                         <h2 class="mb-0 mt-4"><span class="counter-value" data-target="674">674</span>+</h2>
-                        <h6 class="counter-head text-muted">Job Placement</h6>
+                        <h3 class="counter-head text-muted h6">Job Placement</h3>
                     </div><!--end counter box-->
                 </div>
 
@@ -293,7 +293,7 @@
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset187.svg" class="avatar avatar-small" alt="">
                         <h2 class="mb-0 mt-4"><span class="counter-value" data-target="97">97</span>%</h2>
-                        <h6 class="counter-head text-muted">Project Complete</h6>
+                        <h3 class="counter-head text-muted h6">Project Complete</h3>
                     </div><!--end counter box-->
                 </div>
             </div><!--end row-->
