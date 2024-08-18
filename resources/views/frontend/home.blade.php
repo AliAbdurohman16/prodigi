@@ -1,5 +1,9 @@
 @extends('layouts.frontend.main')
 
+@section('css')
+<link href="{{ asset('frontend') }}/assets/css/slider-logo.css" class="theme-opt" rel="stylesheet" type="text/css" />
+@endsection
+
 @section('content')
     <!-- Hero Start -->
     <section class="bg-half-170 pb-0 bg-primary d-table w-100" style="background: url('{{ asset('frontend') }}/assets/images/bg.png') center center;">
@@ -20,6 +24,7 @@
                     <img src="{{ asset('frontend') }}/assets/images/hero-with-laptop.png" class="img-fluid" alt="hero">
                 </div>
             </div><!--end row-->
+            
         </div> <!--end container-->
     </section><!--end section-->
     <!-- Hero End -->
@@ -418,122 +423,57 @@
     </section><!--end section-->
 
     <!-- Partners & Client start -->
-    <section class="section bg-light" id="partner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h4 class="title mb-4">Partner</h4>
-                    </div>
-                </div><!--end col-->
+    <section class="section bg-light">
+        <div class="row mt-4 pt-2 justify-content-center mb-3">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-4">Partner & Client</h4>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
 
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/zkteco.png" class="avatar" width="80px" height="50px" alt="partner">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/unv.png" class="avatar" width="80px" height="50px" alt="partner">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/mikrotik.png" class="avatar" width="100px" height="50px" alt="partner">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/huawei-enterprise.png" class="avatar" width="150px" height="50px" alt="partner">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/dell.png" class="avatar" width="70px" height="70px"alt="partner">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/hikvision.png" class="avatar" width="140px" height="40px" alt="partner">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/partner/cisco.png" class="avatar" width="80px" height="60px"alt="partner">
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-
-        <div class="container mt-100 mt-60">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h4 class="title mb-4">Client</h4>
-                    </div>
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/ciputra.png" class="avatar" width="100px" height="80px" alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/dapen-telkom.png" class="avatar" width="130px" height="100px" alt="client">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/logo-telkom-indonesia.png" class="avatar" width="100px" height="75px" alt="client">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/ind-power.png" class="avatar" width="100px" height="100px" alt="client">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/pt-system-integrators.png" class="avatar" width="100px" height="100px"alt="client">
-                </div><!--end col-->
-                
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/kemenhub.png" class="avatar" width="100px" height="90px" alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/bangunindo.png" class="avatar" width="100px" height="60px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/jalesveva-jayamahe.png" class="avatar" width="100px" height="100px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/korps-brimob.png" class="avatar" width="70px" height="80px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/oli-ebike-systems.png" class="avatar" width="100px" height="100px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/paradigm.png" class="avatar" width="100px" height="100px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/telkom-property.png" class="avatar" width="120px" height="100px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/totalpersadaindonesia.png" class="avatar" width="100px" height="70px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/united-tractors-logo.png" class="avatar" width="140px" height="100px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/bumn.png" class="avatar" width="150px" height="70px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/bksda.png" class="avatar" width="150px" height="70px"alt="client">
-                </div><!--end col-->
-
-                <div class="col-lg-3 col-md-3 col-6 text-center py-4">
-                    <img src="{{ asset('frontend') }}/assets/images/client/cnlc.png" class="avatar" width="100px" height="100px"alt="client">
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
+        <div class="slider-partner">
+            <div class="slider-item-partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/zkteco.png" class="avatar" width="80px" height="50px" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/unv.png" class="avatar" width="80px" height="50px" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/mikrotik.png" class="avatar" width="100px" height="50px" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/huawei-enterprise.png" class="avatar" width="150px" height="50px" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/dell.png" class="avatar" width="70px" height="70px"alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/hikvision.png" class="avatar" width="140px" height="40px" alt="partner">
+                <img src="{{ asset('frontend') }}/assets/images/partner/cisco.png" class="avatar" width="80px" height="60px"alt="partner">
+            </div>
+        </div>
+        <div class="slider-client">
+            <div class="slider-item-client">
+                <img src="{{ asset('frontend') }}/assets/images/client/ciputra.png" class="avatar" width="100px" height="80px" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/dapen-telkom.png" class="avatar" width="130px" height="100px" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/logo-telkom-indonesia.png" class="avatar" width="100px" height="75px" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/ind-power.png" class="avatar" width="100px" height="100px" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/pt-system-integrators.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/kemenhub.png" class="avatar" width="100px" height="90px" alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bangunindo.png" class="avatar" width="100px" height="60px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/jalesveva-jayamahe.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/korps-brimob.png" class="avatar" width="70px" height="80px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/oli-ebike-systems.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/paradigm.png" class="avatar" width="100px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/telkom-property.png" class="avatar" width="120px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/totalpersadaindonesia.png" class="avatar" width="100px" height="70px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/united-tractors-logo.png" class="avatar" width="140px" height="100px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bumn.png" class="avatar" width="150px" height="70px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/bksda.png" class="avatar" width="150px" height="70px"alt="client">
+                <img src="{{ asset('frontend') }}/assets/images/client/cnlc.png" class="avatar" width="100px" height="100px"alt="client">
+            </div>
+        </div>
     </section><!--end section-->
     <!-- Partners & Client End -->
+@endsection
+
+@section('javascript')
+    <script>
+        var copyPartner = document.querySelector('.slider-item-partner').cloneNode(true);
+        document.querySelector('.slider-partner').appendChild(copyPartner);
+
+        var copyClient = document.querySelector('.slider-item-client').cloneNode(true);
+        document.querySelector('.slider-client').appendChild(copyClient);
+    </script>
 @endsection

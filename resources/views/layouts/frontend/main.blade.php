@@ -24,6 +24,7 @@
         <!-- Icons Css -->
         <link href="{{ asset('frontend') }}/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="{{ asset('frontend') }}/assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        @yield('css')
         <!-- Style Css-->
         <link href="{{ asset('frontend') }}/assets/css/style.min.css" class="theme-opt" rel="stylesheet" type="text/css" />
     </head>
