@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = [
-            'products' => Product::limit(3)->get(),
+            'products' => Product::orderBy('created_at', 'desc')->limit(3)->get(),
         ];
 
         return view('frontend.home', $data);
