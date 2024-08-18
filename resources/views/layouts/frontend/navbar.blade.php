@@ -4,10 +4,10 @@
         <!-- Logo container-->
         <a class="logo" href="{{ route('/') }}">
             <span class="logo-light-mode">
-                <img src="{{ asset('frontend') }}/assets/images/prodigi-color.png" class="l-dark" height="40" alt="">
-                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="l-light" height="40" alt="">
+                <img src="{{ asset('frontend') }}/assets/images/prodigi-color.png" class="l-dark img-dark" alt="logo">
+                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="l-light img-light" alt="logo">
             </span>
-            <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="logo-dark-mode" height="40" alt="">
+            <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="logo-dark-mode img-light" alt="logo">
         </a>
 
         <!-- End Logo container-->
