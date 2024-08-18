@@ -92,6 +92,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Jaringan Komputer & Keamanan Cyber</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-server-network"></i>
@@ -106,6 +107,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Sistem Akses Control, Keamanan dan Absensi</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-crosshairs"></i>
@@ -120,6 +122,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Solusi Otomasi perangkat keras</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-hdd"></i>
@@ -134,6 +137,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Pembuatan Aplikasi Web,Desktop, Mobile</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-monitor"></i>
@@ -148,6 +152,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Instalasi Perangkat Keras dan Lunak</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-processor"></i>
@@ -162,6 +167,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Maintenance Perangkat Keras dan Lunak</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-users-alt"></i>
@@ -176,6 +182,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>Pembuatan Perangkat Keras Custom</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-file-alt"></i>
@@ -190,6 +197,7 @@
                         </span>
                         <div class="card-body p-0 content">
                             <h5>⁠Implementasi Kecerdasan Buatan (AI) & Machine Learning</h5>
+                            <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                         </div>
                         <span class="big-icon text-center">
                             <i class="uil uil-robot"></i>
