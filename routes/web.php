@@ -19,6 +19,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resources([
         'pages' => Backend\PageController::class,
         'services' => Backend\ServiceController::class,
+        'product-categories' => Backend\Product\CategoryController::class,
+        'product-services' => Backend\Product\ServiceController::class,
+        'products' => Backend\Product\ProductController::class,
         'portfolio-categories' => Backend\Portfolio\CategoryController::class,
         'portfolio-posts' => Backend\Portfolio\PostController::class,
         'teams' => Backend\TeamController::class,

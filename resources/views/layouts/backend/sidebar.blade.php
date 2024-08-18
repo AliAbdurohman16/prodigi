@@ -11,10 +11,19 @@
             <li class="{{ request()->is('dashboard') ? 'active' : '' }}"><a href="{{ route('dashboard') }}"><i class="ti ti-home me-2"></i>Dashboard</a></li>
             <li class="{{ request()->routeIs('pages*') ? 'active' : '' }}"><a href="{{ route('pages.index') }}"><i class="ti ti-browser me-2"></i>Halaman</a></li>
             <li class="{{ request()->routeIs('services*') ? 'active' : '' }}"><a href="{{ route('services.index') }}"><i class="ti ti-file-info me-2"></i>Layanan</a></li>
-            <li><a href=""><i class="ti ti-apps me-2"></i>Produk</a></li>
+            <li class="sidebar-dropdown {{ request()->is('products-services*') ? 'active' : '' }} || {{ request()->is('product-categories*') ? 'active' : '' }} || {{ request()->is('products*') ? 'active' : '' }}">
+                <a href="javascript:void(0)"><i class="ti ti-apps me-2"></i>Produk</a>
+                <div class="sidebar-submenu {{ request()->is('products-services*') ? 'd-block' : '' }} || {{ request()->is('product-categories*') ? 'd-block' : '' }} || {{ request()->is('products*') ? 'd-block' : '' }}">
+                    <ul>
+                        <li class="{{ request()->routeIs('product-services.*') ? 'active' : '' }}"><a href="{{ route('product-services.index') }}">Jenis Produk</a></li>
+                        <li class="{{ request()->routeIs('product-categories.*') ? 'active' : '' }}"><a href="{{ route('product-categories.index') }}">Kategori Produk</a></li>
+                        <li class="{{ request()->routeIs('products.*') ? 'active' : '' }}"><a href="{{ route('products.index') }}">Produk</a></li>
+                    </ul>
+                </div>
+            </li>
             <li class="sidebar-dropdown {{ request()->is('portfolio-categories*') ? 'active' : '' }} || {{ request()->is('portfolio-posts*') ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="ti ti-camera me-2"></i>Portofolio</a>
-                <div class="sidebar-submenu  {{ request()->is('portfolio-categories*') ? 'd-block' : '' }} || {{ request()->is('portfolio-posts*') ? 'd-block' : '' }}">
+                <div class="sidebar-submenu {{ request()->is('portfolio-categories*') ? 'd-block' : '' }} || {{ request()->is('portfolio-posts*') ? 'd-block' : '' }}">
                     <ul>
                         <li class="{{ request()->routeIs('portfolio-categories.*') ? 'active' : '' }}"><a href="{{ route('portfolio-categories.index') }}">Kategori Portofolio</a></li>
                         <li class="{{ request()->routeIs('portfolio-posts.*') ? 'active' : '' }}"><a href="{{ route('portfolio-posts.index') }}">Postingan Portofolio</a></li>
