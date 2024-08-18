@@ -50,12 +50,13 @@
             <ul class="navigation-menu nav-light">
                 <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
                 <li class="{{ request()->is('page/tentang') ? 'active' : '' }}"><a href="{{ route('page.index', 'tentang') }}" class="sub-menu-item">Tentang</a></li>
-                <li class="has-submenu parent-menu-item">
+                <li class="has-submenu parent-menu-item {{ request()->is('service/*') ? 'active' : '' }}">
                     <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <li><a href="documentation.html" class="sub-menu-item">Documentation</a></li>
-                        <li><a href="changelog.html" class="sub-menu-item">Changelog</a></li>
-                        <li><a href="widget.html" class="sub-menu-item">Widget</a></li>
+                        <?php $services = App\Models\Service::all(); ?>
+                        @foreach ($services as $service)
+                        <li class="{{ request()->is('service/' . $service->slug) ? 'active' : '' }}"><a href="{{ route('service.index', $service->slug) }}" class="sub-menu-item">{{ $service->title }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="{{ request()->is('teams') ? 'active' : '' }}"><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>

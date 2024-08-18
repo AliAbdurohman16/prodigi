@@ -9,7 +9,8 @@
 
         <ul class="sidebar-menu">
             <li class="{{ request()->is('dashboard') ? 'active' : '' }}"><a href="{{ route('dashboard') }}"><i class="ti ti-home me-2"></i>Dashboard</a></li>
-            <li class="{{ request()->routeIs('pages*') ? 'active' : '' }}"><a href="{{ route('pages.index') }}"><i class="ti ti-file-info me-2"></i>Halaman</a></li>
+            <li class="{{ request()->routeIs('pages*') ? 'active' : '' }}"><a href="{{ route('pages.index') }}"><i class="ti ti-browser me-2"></i>Halaman</a></li>
+            <li class="{{ request()->routeIs('services*') ? 'active' : '' }}"><a href="{{ route('services.index') }}"><i class="ti ti-file-info me-2"></i>Layanan</a></li>
             <li><a href=""><i class="ti ti-apps me-2"></i>Produk</a></li>
             <li class="sidebar-dropdown {{ request()->is('portfolio-categories*') ? 'active' : '' }} || {{ request()->is('portfolio-posts*') ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="ti ti-camera me-2"></i>Portofolio</a>
