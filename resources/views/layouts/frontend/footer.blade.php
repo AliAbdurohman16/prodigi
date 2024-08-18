@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2 mb-4">
                             <a href="{{ route('/') }}" class="logo-footer">
-                                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" height="50" alt="">
+                                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" height="50" alt="logo">
                             </a>
                             <p class="mt-4">Integrator IT Profesional siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
                             <!-- <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
