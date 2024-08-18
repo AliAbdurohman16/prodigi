@@ -2,12 +2,6 @@
 
 @section('title', 'Edit Data Tim')
 
-@section('css')
-<link rel="stylesheet" href="{{ asset('backend') }}/assets/libs/select2/select2.min.css"/>
-<link rel="stylesheet" href="{{ asset('backend') }}/assets/css/select2.css"/>
-<link rel="stylesheet" href="{{ asset('backend') }}/assets/libs/summernote/summernote.min.css"/>
-@endsection
-
 @section('content')
 <div class="container-fluid">
     <div class="layout-specing">
@@ -100,18 +94,7 @@
 @endsection
 
 @section('javascript')
-<script src="{{ asset('backend') }}/assets/libs/select2/select2.min.js"></script>
-<script src="{{ asset('backend') }}/assets/libs/summernote/summernote.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.select2').select2();
-        $('#summernote').summernote({
-            height: 300,
-            placeholder: 'Tulis sesuatu di sini...',
-            tabsize: 2,
-        });
-    });
-
     // function preview image
     function previewImg() {
         const image = document.querySelector('#image');

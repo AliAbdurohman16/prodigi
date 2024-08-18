@@ -1,5 +1,7 @@
 @extends('layouts.backend.main')
 
+@section('title', 'Dashboard')
+
 @section('content')
 <div class="container-fluid">
     <div class="layout-specing">

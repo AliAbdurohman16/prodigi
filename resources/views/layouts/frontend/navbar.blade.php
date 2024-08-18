@@ -48,11 +48,18 @@
         <div id="navigation">
             <!-- Navigation Menu-->   
             <ul class="navigation-menu nav-light">
-                <li><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
-                <li><a href="#about" class="sub-menu-item">Tentang</a></li>
-                <li><a href="#services" class="sub-menu-item">Layanan</a></li>
-                <li><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>
-                <li><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
+                <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
+                <li class="{{ request()->is('page/tentang') ? 'active' : '' }}"><a href="{{ route('page.index', 'tentang') }}" class="sub-menu-item">Tentang</a></li>
+                <li class="has-submenu parent-menu-item">
+                    <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="documentation.html" class="sub-menu-item">Documentation</a></li>
+                        <li><a href="changelog.html" class="sub-menu-item">Changelog</a></li>
+                        <li><a href="widget.html" class="sub-menu-item">Widget</a></li>
+                    </ul>
+                </li>
+                <li class="{{ request()->is('teams') ? 'active' : '' }}"><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li>
+                <li class="{{ request()->is('portfolio/*') ? 'active' : '' }}"><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
     </div><!--end container-->

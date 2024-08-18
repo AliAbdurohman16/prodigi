@@ -8,15 +8,15 @@
         </div>
 
         <ul class="sidebar-menu">
-            <li><a href="{{ route('dashboard') }}"><i class="ti ti-home me-2"></i>Dashboard</a></li>
-            <li><a href=""><i class="ti ti-file-info me-2"></i>Halaman</a></li>
+            <li class="{{ request()->is('dashboard') ? 'active' : '' }}"><a href="{{ route('dashboard') }}"><i class="ti ti-home me-2"></i>Dashboard</a></li>
+            <li class="{{ request()->routeIs('pages*') ? 'active' : '' }}"><a href="{{ route('pages.index') }}"><i class="ti ti-file-info me-2"></i>Halaman</a></li>
             <li><a href=""><i class="ti ti-apps me-2"></i>Produk</a></li>
-            <li class="sidebar-dropdown">
+            <li class="sidebar-dropdown {{ request()->is('portfolio-categories*') ? 'active' : '' }} || {{ request()->is('portfolio-posts*') ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="ti ti-camera me-2"></i>Portofolio</a>
-                <div class="sidebar-submenu">
+                <div class="sidebar-submenu  {{ request()->is('portfolio-categories*') ? 'd-block' : '' }} || {{ request()->is('portfolio-posts*') ? 'd-block' : '' }}">
                     <ul>
-                        <li><a href="{{ route('portfolio-categories.index') }}">Kategori Portofolio</a></li>
-                        <li><a href="{{ route('portfolio-posts.index') }}">Postingan Portofolio</a></li>
+                        <li class="{{ request()->routeIs('portfolio-categories.*') ? 'active' : '' }}"><a href="{{ route('portfolio-categories.index') }}">Kategori Portofolio</a></li>
+                        <li class="{{ request()->routeIs('portfolio-posts.*') ? 'active' : '' }}"><a href="{{ route('portfolio-posts.index') }}">Postingan Portofolio</a></li>
                     </ul>
                 </div>
             </li>

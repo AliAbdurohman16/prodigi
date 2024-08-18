@@ -1,6 +1,10 @@
 @extends('layouts.backend.main')
 
-@section('title', 'Tambah Data Tim')
+@section('title', 'Tambah Halaman')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('backend') }}/assets/libs/summernote/summernote.min.css"/>
+@endsection
 
 @section('content')
 <div class="container-fluid">
@@ -10,19 +14,19 @@
 
             <nav aria-label="breadcrumb" class="d-inline-block">
                 <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
-                    <li class="breadcrumb-item text-capitalize"><a href="{{ route('teams.index') }}">@yield('title')</a></li>
+                    <li class="breadcrumb-item text-capitalize"><a href="{{ route('pages.index') }}">@yield('title')</a></li>
                     <li class="breadcrumb-item text-capitalize active" aria-current="page">Tambah Data</li>
                 </ul>
             </nav>
         </div>
 
-        <a href="{{ route('teams.index') }}" class="btn btn-warning btn-sm mt-4"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+        <a href="{{ route('pages.index') }}" class="btn btn-warning btn-sm mt-4"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
 
         <div class="col-lg-12 mt-4">
             <div class="card">
                 <div class="container">
                     <div class="card-body">
-                        <form action="{{ route('teams.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('pages.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="row mt-4">
                                 <div class="col-md-12">
@@ -45,9 +49,9 @@
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Nama <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control @error('name') is-invalid @enderror" placeholder="Nama" name="name" value="{{ old('name') }}" autocomplete="name">
-                                        @error('name')
+                                        <label class="form-label">Judul <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Judul" name="title" value="{{ old('title') }}" autocomplete="title">
+                                        @error('title')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -56,26 +60,15 @@
                                 </div><!--end col-->
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Posisi <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control @error('position') is-invalid @enderror" placeholder="Posisi" name="position" value="{{ old('position') }}" autocomplete="position">
-                                        @error('position')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                        <label class="form-label">Konten  <span class="text-danger">*</span></label>
+                                        <textarea name="content" id="summernote" class="form-control @error('content') is-invalid @enderror" placeholder="Konten">{{ old('content') }}</textarea>
+                                        @error('content')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
                                         @enderror
                                     </div>
-                                </div><!--end col-->
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label class="form-label">Urutan <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control @error('sort') is-invalid @enderror" placeholder="Urutan" name="sort" value="{{ old('sort') }}" autocomplete="sort">
-                                        @error('sort')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div><!--end col-->
+                                </div>
                             </div><!--end row-->
                             <div class="row">
                                 <div class="col-sm-12">
@@ -93,7 +86,16 @@
 @endsection
 
 @section('javascript')
+<script src="{{ asset('backend') }}/assets/libs/summernote/summernote.min.js"></script>
 <script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+            height: 300,
+            placeholder: 'Tulis sesuatu di sini...',
+            tabsize: 2,
+        });
+    });
+
     // function preview image
     function previewImg() {
         const image = document.querySelector('#image');

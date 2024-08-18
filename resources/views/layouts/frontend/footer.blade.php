@@ -21,11 +21,9 @@
                         <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                             <h5 class="footer-head">Perusahaan</h5>
                             <ul class="list-unstyled footer-list mt-4">
-                                <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tentang</a></li>
+                                <li><a href="{{ route('page.index', 'tentang') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tentang</a></li>
                                 <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Layanan</a></li>
-                                <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Harga</a></li>
-                                <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Projek</a></li>
-                                <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Karir</a></li>
+                                <li><a href="{{ route('portfolio.index') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Portofolio</a></li>
                             </ul>
                         </div><!--end col-->
                 
@@ -41,6 +39,7 @@
                             <h5 class="footer-head">Kontak</h5>
                             <p class="mt-4">Email : admin@prodigisi.co.id</p>
                             <p class="mt-4">Telepon : +62 812-9398-8251</p>
+                            <p class="mt-4">Whatsapp : +62 812-9398-8251</p>
                         </div><!--end col-->
                     </div><!--end row-->
                 </div>

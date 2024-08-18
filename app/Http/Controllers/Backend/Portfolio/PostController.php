@@ -85,7 +85,7 @@ class PostController extends Controller
         $post = Post::find($id);
 
         $data = $request->validate([
-            'image' => 'image|mimes:jpeg,png,jpg|size:2048',
+            'image' => 'image|mimes:jpeg,png,jpg|max:2048',
             'title' => 'required|max:255',
             'portfolio_category_id' => 'required',
             'description' => 'required',
