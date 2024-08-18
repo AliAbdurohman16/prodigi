@@ -2,7 +2,7 @@
 <header id="topnav" class="defaultscroll sticky">
     <div class="container">
         <!-- Logo container-->
-        <a class="logo" href="index.html">
+        <a class="logo" href="{{ route('/') }}">
             <span class="logo-light-mode">
                 <img src="{{ asset('frontend') }}/assets/images/prodigi-color.png" class="l-dark" height="40" alt="">
                 <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="l-light" height="40" alt="">
