@@ -24,9 +24,8 @@
                                     ] as $key => $icon)
                                         @if ($setting->$key)
                                             <li class="list-inline-item">
-                                                <a href="{{ $setting->$key }}" target="_blank" class="rounded">
+                                                <a href="{{ $setting->$key }}" target="_blank" class="rounded" aria-label="{{ $setting->$icon }}">
                                                     <i data-feather="{{ $icon }}" class="fea icon-sm fea-social"></i>
-                                                    {{ $setting->key }}
                                                 </a>
                                             </li>
                                         @endif
