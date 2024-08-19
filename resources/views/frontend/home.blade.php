@@ -28,7 +28,7 @@
     
     <section class="section">
         <!-- About Start -->
-        <div class="container" id="about">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="row align-items-center">
@@ -77,7 +77,7 @@
         </div><!--end container-->
 
         <!-- Services Start -->
-        <div class="container mt-100 mt-60" id="services">
+        <div class="container mt-100 mt-60">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
@@ -307,7 +307,7 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="section-title text-center mb-4 pb-2">
-                        <h6 class="text-primary">Proses Kerja</h6>
+                        <p class="text-primary h6">Proses Kerja</p>
                         <h4 class="title mb-4">Bagaimana cara kami bekerja?</h4>
                         <p class="para-desc mx-auto text-muted mb-0">Kami mengikuti pendekatan yang terstruktur dan transparan dalam setiap proyek yang kami kerjakan.</p>
                     </div>
