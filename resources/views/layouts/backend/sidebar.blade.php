@@ -41,15 +41,16 @@
                     </ul>
                 </div>
             </li>
-            <li class="sidebar-dropdown">
+            {{-- <li class="sidebar-dropdown {{ request()->is('customers*') ? 'active' : '' }} || {{ request()->is('users*') ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="ti ti-users me-2"></i>Pelanggan & Pengguna</a>
-                <div class="sidebar-submenu">
+                <div class="sidebar-submenu {{ request()->is('customers*') ? 'd-block' : '' }} || {{ request()->is('users*') ? 'd-block' : '' }}">
                     <ul>
-                        <li><a href="">Data Pelanggan</a></li>
-                        <li><a href="">Data Pengguna</a></li>
+                        <li class="{{ request()->routeIs('customers.*') ? 'active' : '' }}"><a href="{{ route('customers.index') }}">Data Pelanggan</a></li>
+                        <li class="{{ request()->routeIs('users.*') ? 'active' : '' }}"><a href="{{ route('users.index') }}">Data Pengguna</a></li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
+            <li class="{{ request()->is('users*') ? 'active' : '' }}"><a href="{{ route('users.index') }}"><i class="ti ti-users me-2"></i>Data Pengguna</a></li>
             <li class="{{ request()->is('setting*') ? 'active' : '' }}"><a href="{{ route('profile.index') }}"><i class="ti ti-user me-2"></i>Profil</a></li>
             <li class="{{ request()->is('change-password*') ? 'active' : '' }}"><a href="{{ route('change-password.index') }}"><i class="ti ti-key me-2"></i>Ganti Kata Sandi</a></li>
             <li class="{{ request()->is('setting*') ? 'active' : '' }}"><a href="{{ route('setting.index') }}"><i class="ti ti-settings me-2"></i>Pengaturan</a></li>

@@ -31,6 +31,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'teams' => Backend\TeamController::class,
         'partners' => Backend\PartnerController::class,
         'clients' => Backend\ClientController::class,
+        'customers' => Backend\CustomerController::class,
+        'users' => Backend\UserController::class,
         'profile' => Backend\ProfileController::class,
         'change-password' => Backend\ChangePasswordController::class,
         'setting' => Backend\SettingController::class,
