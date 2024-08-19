@@ -18,17 +18,28 @@
 
             <li class="list-inline-item mb-0 ms-1">
                 <div class="dropdown dropdown-primary">
-                    <button type="button" class="btn btn-soft-light dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('backend') }}/assets/images/client/05.jpg" class="avatar avatar-ex-small rounded" alt=""></button>
+                    @php
+                        $user = Auth::user();
+                        $image = $user->image === 'default/user.png' 
+                                    ? asset($user->image) 
+                                    : asset('storage/profile/' . $user->image);
+                        $role = $user->hasRole('superadmin') 
+                                    ? 'Superadmin' 
+                                    : ($user->hasRole('admin') ? 'Admin' : 'User');
+                    @endphp
+                    <button type="button" class="btn btn-soft-light dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ $image }}" class="avatar avatar-ex-small rounded" alt="avatar">
+                    </button>
                     <div class="dropdown-menu dd-menu dropdown-menu-end shadow border-0 mt-3 py-3" style="min-width: 200px;">
                         <a class="dropdown-item d-flex align-items-center text-dark pb-3" href="profile.html">
-                            <img src="{{ asset('backend') }}/assets/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                            <img src="{{ $image }}" class="avatar avatar-md-sm rounded-circle border shadow" alt="avatar">
                             <div class="flex-1 ms-2">
-                                <span class="d-block">Ali Abdurohman</span>
-                                <small class="text-muted">Superadmin</small>
+                                <span class="d-block">{{ Auth::user()->name }}</span>
+                                <small class="text-muted">{{ $role }}</small>
                             </div>
                         </a>
                         <a class="dropdown-item text-dark" href="{{ ('dashboard') }}"><span class="mb-0 d-inline-block me-1"><i class="ti ti-home"></i></span> Dashboard</a>
-                        <a class="dropdown-item text-dark" href=""><span class="mb-0 d-inline-block me-1"><i class="ti ti-user"></i></span> Profil</a>
+                        <a class="dropdown-item text-dark" href="{{ route('profile.index') }}"><span class="mb-0 d-inline-block me-1"><i class="ti ti-user"></i></span> Profil</a>
                         <a class="dropdown-item text-dark" href=""><span class="mb-0 d-inline-block me-1"><i class="ti ti-key"></i></span> Ganti Kata Sandi</a>
                         <a class="dropdown-item text-dark" href="{{ route('setting.index') }}"><span class="mb-0 d-inline-block me-1"><i class="ti ti-settings"></i></span> Pengaturan</a>
                         <div class="dropdown-divider border-top"></div>
