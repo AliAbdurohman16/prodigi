@@ -75,9 +75,12 @@
                 </div>
             </div><!--end row-->
         </div><!--end container-->
-
+    </section><!--end section-->
+    
+    <!-- Start -->
+    <section class="section pt-0">
         <!-- Services Start -->
-        <div class="container mt-100 mt-60">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
@@ -86,8 +89,8 @@
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
-
-            <div class="row">
+    
+            <div class="row mb-5">
                 <div class="col-lg-3 col-md-4 mt-4 pt-2">
                     <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
                         <span class="h1 icon-color">
@@ -208,12 +211,7 @@
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
-        </div><!--end container-->
-    </section><!--end section-->
-    
-    <!-- Start -->
-    <section class="section pt-0">
-        <div class="container">
+            
             <div class="p-4 rounded shadow bg-primary bg-gradient position-relative" style="z-index: 1;">
                 <div class="row">
                     <div class="col-md-6 col-12">
@@ -297,12 +295,11 @@
                     </div><!--end counter box-->
                 </div>
             </div><!--end row-->
-            <div class="feature-posts-placeholder bg-light"></div>
         </div><!--end container-->
     </section><!--end section-->
     <!-- End -->
 
-    <section class="section">
+    <section class="section pt-0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -424,7 +421,8 @@
         <div class="row mt-4 pt-2 justify-content-center mb-3">
             <div class="col-12">
                 <div class="section-title text-center mb-4 pb-2">
-                    <h4 class="title mb-4">Partner & Client</h4>
+                    <h4 class="title mb-4">Partner & Klien</h4>
+                    <p class="para-desc mx-auto text-muted mb-0">Bersama partner dan klien kami, kami membangun solusi inovatif yang mendukung pertumbuhan dan kesuksesan bersama.</p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
