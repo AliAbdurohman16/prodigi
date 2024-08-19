@@ -32,6 +32,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'partners' => Backend\PartnerController::class,
         'clients' => Backend\ClientController::class,
         'profile' => Backend\ProfileController::class,
+        'change-password' => Backend\ChangePasswordController::class,
         'setting' => Backend\SettingController::class,
     ]);
 });

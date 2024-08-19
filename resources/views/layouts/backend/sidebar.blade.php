@@ -51,7 +51,7 @@
                 </div>
             </li>
             <li class="{{ request()->is('setting*') ? 'active' : '' }}"><a href="{{ route('profile.index') }}"><i class="ti ti-user me-2"></i>Profil</a></li>
-            <li><a href=""><i class="ti ti-key me-2"></i>Ganti Kata Sandi</a></li>
+            <li class="{{ request()->is('change-password*') ? 'active' : '' }}"><a href="{{ route('change-password.index') }}"><i class="ti ti-key me-2"></i>Ganti Kata Sandi</a></li>
             <li class="{{ request()->is('setting*') ? 'active' : '' }}"><a href="{{ route('setting.index') }}"><i class="ti ti-settings me-2"></i>Pengaturan</a></li>
         </ul>
         <!-- sidebar-menu  -->
