@@ -2,12 +2,13 @@
 <header id="topnav" class="defaultscroll sticky">
     <div class="container">
         <!-- Logo container-->
+        <?php $setting = App\Models\Setting::find(1); ?>
         <a class="logo" href="{{ route('/') }}">
             <span class="logo-light-mode">
-                <img src="{{ asset('frontend') }}/assets/images/prodigi-color.png" class="l-dark img-dark" alt="logo">
-                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="l-light img-light" alt="logo">
+                <img src="{{ asset('storage/setting/' . $setting->logo_color) }}" class="l-dark img-dark" alt="logo">
+                <img src="{{ asset('storage/setting/' . $setting->logo_white) }}" class="l-light img-light" alt="logo">
             </span>
-            <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" class="logo-dark-mode img-light" alt="logo">
+            <img src="{{ asset('storage/setting/' . $setting->logo_white) }}" class="logo-dark-mode img-light" alt="logo">
         </a>
 
         <!-- End Logo container-->

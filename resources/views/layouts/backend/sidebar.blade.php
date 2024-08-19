@@ -3,7 +3,8 @@
     <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
         <div class="sidebar-brand">
             <a href="{{ route('/') }}">
-                <img src="{{ asset('default/prodigi-color.png') }}" height="50" class="logo-light-mode" alt="">
+                <?php $setting = App\Models\Setting::find(1); ?>
+                <img src="{{ asset('storage/setting/' . $setting->logo_color) }}" height="50" class="logo-light-mode" alt="">
             </a>
         </div>
 
