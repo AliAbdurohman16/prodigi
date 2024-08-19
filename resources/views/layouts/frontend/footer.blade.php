@@ -5,20 +5,33 @@
             <div class="col-12">
                 <div class="footer-py-60">
                     <div class="row">
+                        <?php $setting = App\Models\Setting::find(1); ?>
                         <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2 mb-4">
                             <a href="{{ route('/') }}" class="logo-footer">
-                                <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" height="50" alt="logo">
+                                <img src="{{ asset('storage/setting/' . $setting->logo_white) }}" height="50" alt="logo">
                             </a>
                             <p class="mt-4">Integrator IT Profesional siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
-                            {{-- <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4 mb-4">
-                                <li class="list-inline-item"><a href="" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                                <li class="list-inline-item"><a href="" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                            </ul> --}}
-                            <p><i class="uil uil-envelope"></i> admin@prodigisi.co.id</p>
-                            <p><i class="uil uil-phone"></i> +62 812-9398-8251</p>
-                            <p><i class="uil uil-whatsapp"></i> +62 812-9398-8251</p>
+                            <p><i class="uil uil-envelope"></i> {{ $setting->email }}</p>
+                            <p><i class="uil uil-phone"></i> {{ $setting->telepon }}</p>
+                            <p><i class="uil uil-whatsapp"></i> {{ $setting->whatsapp }}</p>
+                            @if ($setting->facebook || $setting->instagram || $setting->twitter || $setting->linkedin)
+                                <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                    @foreach ([
+                                        'facebook' => 'facebook',
+                                        'instagram' => 'instagram',
+                                        'twitter' => 'twitter',
+                                        'linkedin' => 'linkedin'
+                                    ] as $key => $icon)
+                                        @if ($setting->$key)
+                                            <li class="list-inline-item">
+                                                <a href="{{ $setting->$key }}" target="_blank" class="rounded">
+                                                    <i data-feather="{{ $icon }}" class="fea icon-sm fea-social"></i>
+                                                </a>
+                                            </li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            @endif
                         </div><!--end col-->
                 
                         <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mb-4">

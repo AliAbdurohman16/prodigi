@@ -10,8 +10,6 @@ class Page extends Model
 {
     use HasFactory;
 
-    protected $table = 'pages';
-
     protected $keyType = 'string';
     public $incrementing = false;
 

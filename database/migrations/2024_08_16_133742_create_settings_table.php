@@ -12,22 +12,27 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('settings', function (Blueprint $table) {
-            $table->uuid('id')->primary();
-            $table->string('logo_color');
-            $table->string('logo_white');
+            $table->id();
+            $table->text('logo_color');
+            $table->text('logo_white');
             $table->string('title');
             $table->string('desc');
-            $table->string('about_image_1');
-            $table->string('about_image_2');
-            $table->string('about_image_3');
-            $table->string('about_desc');
+            $table->text('hero');
+            $table->text('about_image_1');
+            $table->text('about_image_2');
+            $table->text('about_image_3');
+            $table->text('about_desc');
             $table->string('happy_client');
             $table->string('job_placement');
             $table->string('project_complete');
-            $table->string('footer');
+            $table->string('footer_desc');
             $table->string('email');
             $table->string('telepon');
-            $table->string('whatsapp');
+            $table->string('whatsapp')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
             $table->timestamps();
         });
     }

@@ -10,8 +10,6 @@ class Partner extends Model
 {
     use HasFactory;
 
-    protected $table = 'partners';
-
     protected $keyType = 'string';
     public $incrementing = false;
 

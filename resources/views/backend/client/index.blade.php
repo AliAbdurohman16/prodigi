@@ -125,7 +125,7 @@
                             <div class="mb-3">
                                 <div class="row">
                                     <div class="col-12 mb-2 d-flex justify-content-center align-items-center">
-                                        <img src="{{ asset('storage/client/' . $client->image) }}" width="200px" alt="image" class="img-thumbnail-edit img-preview-edit">
+                                        <img src="{{ asset('storage/client/' . $client->image) }}" width="200px" alt="image" class="img-thumbnail img-preview-edit">
                                     </div>
                                     <div class="col-12">
                                         <input type="file" name="image" id="image-edit" class="form-control @error('image') is-invalid @enderror" accept="image/*" onchange="previewImgEdit()">

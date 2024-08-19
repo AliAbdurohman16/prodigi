@@ -12,13 +12,13 @@
                 <div class="col-lg-8 col-md-6">
                     <div class="title-heading mb-md-5 pb-md-5">
                         <h4 class="text-white-50">Selamat Datang Di Layanan Kami</h4>
-                        <h4 class="heading text-white mb-3 title-dark">Integrator IT Profesional </h4>
-                        <p class="para-desc text-white-50">Kita siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
+                        <h4 class="heading text-white mb-3 title-dark">{{ $setting->title }}</h4>
+                        <p class="para-desc text-white-50">{{ $setting->desc }}</p>
                     </div>
                 </div><!--end col-->
 
                 <div class="col-lg-4 col-md-6 mt-5 mt-sm-0 hero-img">
-                    <img src="{{ asset('frontend') }}/assets/images/hero-with-laptop.png" class="img-fluid d-block w-100" alt="hero">
+                    <img src="{{ asset('storage/setting/' . $setting->hero) }}" class="img-fluid d-block w-100" alt="hero">
                 </div>
             </div><!--end row-->
             
@@ -35,7 +35,7 @@
                         <div class="col-lg-6 col-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
                             <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                                 <div class="card-body p-0">
-                                    <img src="{{ asset('frontend') }}/assets/images/1.jpg" class="img-fluid" alt="work-image">
+                                    <img src="{{ asset('storage/setting/' . $setting->about_image_1) }}" class="img-fluid" alt="work-image">
                                 </div>
                             </div>
                         </div><!--end col-->
@@ -45,7 +45,7 @@
                                 <div class="col-lg-12 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
                                     <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                                         <div class="card-body p-0">
-                                            <img src="{{ asset('frontend') }}/assets/images/2.jpg" class="img-fluid" alt="work-image">
+                                            <img src="{{ asset('storage/setting/' . $setting->about_image_2) }}" class="img-fluid" alt="work-image">
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -53,7 +53,7 @@
                                 <div class="col-lg-12 col-md-12 mt-4 pt-2">
                                     <div class="card work-container work-primary work-modern overflow-hidden rounded border-0 shadow-md">
                                         <div class="card-body p-0">
-                                            <img src="{{ asset('frontend') }}/assets/images/3.jpg" class="img-fluid" alt="work-image">
+                                            <img src="{{ asset('storage/setting/' . $setting->about_image_3) }}" class="img-fluid" alt="work-image">
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -274,7 +274,7 @@
                 <div class="col-md-4 col-12 mt-4 pt-2">
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset190.svg" class="avatar avatar-small" alt="">
-                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="96">96</span>%</h2>
+                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="{{ $setting->happy_client }}">{{ $setting->happy_client }}</span>%</h2>
                         <h3 class="counter-head text-muted h6">Happy Client</h3>
                     </div><!--end counter box-->
                 </div>
@@ -282,7 +282,7 @@
                 <div class="col-md-4 col-12 mt-4 pt-2">
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset192.svg" class="avatar avatar-small" alt="">
-                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="674">674</span>+</h2>
+                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="{{ $setting->job_placement }}">{{ $setting->job_placement }}</span>+</h2>
                         <h3 class="counter-head text-muted h6">Job Placement</h3>
                     </div><!--end counter box-->
                 </div>
@@ -290,7 +290,7 @@
                 <div class="col-md-4 col-12 mt-4 pt-2">
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset187.svg" class="avatar avatar-small" alt="">
-                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="97">97</span>%</h2>
+                        <h2 class="mb-0 mt-4"><span class="counter-value" data-target="{{ $setting->project_complete }}">{{ $setting->project_complete }}</span>%</h2>
                         <h3 class="counter-head text-muted h6">Project Complete</h3>
                     </div><!--end counter box-->
                 </div>

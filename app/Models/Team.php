@@ -10,8 +10,6 @@ class Team extends Model
 {
     use HasFactory;
 
-    protected $table = 'teams';
-
     protected $keyType = 'string';
     public $incrementing = false;
 

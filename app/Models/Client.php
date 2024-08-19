@@ -10,8 +10,6 @@ class Client extends Model
 {
     use HasFactory;
 
-    protected $table = 'clients';
-
     protected $keyType = 'string';
     public $incrementing = false;
 
