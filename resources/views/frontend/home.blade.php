@@ -417,7 +417,7 @@
     </section><!--end section-->
 
     <!-- Partners & Client start -->
-    <section class="section bg-light">
+    <section class="section pt-0">
         <div class="row mt-4 pt-2 justify-content-center mb-3">
             <div class="col-12">
                 <div class="section-title text-center mb-4 pb-2">
