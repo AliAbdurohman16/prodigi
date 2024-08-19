@@ -429,34 +429,16 @@
 
         <div class="slider-partner">
             <div class="slider-item-partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/zkteco.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/unv.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/mikrotik.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/huawei-enterprise.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/dell.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/hikvision.png" class="avatar" alt="partner">
-                <img src="{{ asset('frontend') }}/assets/images/partner/cisco.png" class="avatar" alt="partner">
+                @foreach ($partners as $partner)
+                <img src="{{ asset('storage/partner/' . $partner->image) }}" class="avatar" alt="partner">
+                @endforeach
             </div>
         </div>
         <div class="slider-client">
             <div class="slider-item-client">
-                <img src="{{ asset('frontend') }}/assets/images/client/ciputra.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/dapen-telkom.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/logo-telkom-indonesia.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/ind-power.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/pt-system-integrators.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/kemenhub.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bangunindo.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/jalesveva-jayamahe.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/korps-brimob.png" class="avatar" width="70px" height="80px"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/oli-ebike-systems.png" class="avatar"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/paradigm.png" class="avatar"alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/telkom-property.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/totalpersadaindonesia.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/united-tractors-logo.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bumn.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/bksda.png" class="avatar" alt="client">
-                <img src="{{ asset('frontend') }}/assets/images/client/cnlc.png" class="avatar"alt="client">
+                @foreach ($clients as $client)
+                <img src="{{ asset('storage/client/' . $client->image) }}" class="avatar" alt="client">
+                @endforeach
             </div>
         </div>
     </section><!--end section-->

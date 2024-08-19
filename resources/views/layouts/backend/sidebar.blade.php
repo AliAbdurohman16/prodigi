@@ -30,13 +30,13 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="{{ route('teams.index') }}"><i class="ti ti-users me-2"></i>Data Tim</a></li>
-            <li class="sidebar-dropdown">
-                <a href="javascript:void(0)"><i class="ti ti-brand-gravatar me-2"></i>Logo Partner & Client</a>
-                <div class="sidebar-submenu">
+            <li class="{{ request()->routeIs('teams*') ? 'active' : '' }}"><a href="{{ route('teams.index') }}"><i class="ti ti-users me-2"></i>Data Tim</a></li>
+            <li class="sidebar-dropdown {{ request()->is('partners*') ? 'active' : '' }} || {{ request()->is('clients*') ? 'active' : '' }}">
+                <a href="javascript:void(0)"><i class="ti ti-brand-gravatar me-2"></i>Logo Partner & Klient</a>
+                <div class="sidebar-submenu {{ request()->is('partners*') ? 'd-block' : '' }} || {{ request()->is('clients*') ? 'd-block' : '' }}">
                     <ul>
-                        <li><a href="">Partner</a></li>
-                        <li><a href="">Client</a></li>
+                        <li class="{{ request()->routeIs('partners.*') ? 'active' : '' }}"><a href="{{ route('partners.index') }}">Partner</a></li>
+                        <li class="{{ request()->routeIs('clients.*') ? 'active' : '' }}"><a href="{{ route('clients.index') }}">Klient</a></li>
                     </ul>
                 </div>
             </li>

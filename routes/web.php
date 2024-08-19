@@ -29,5 +29,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'portfolio-categories' => Backend\Portfolio\CategoryController::class,
         'portfolio-posts' => Backend\Portfolio\PostController::class,
         'teams' => Backend\TeamController::class,
+        'partners' => Backend\PartnerController::class,
+        'clients' => Backend\ClientController::class,
     ]);
 });
