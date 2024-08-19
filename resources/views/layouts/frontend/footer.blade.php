@@ -10,12 +10,15 @@
                                 <img src="{{ asset('frontend') }}/assets/images/prodigi-white.png" height="50" alt="logo">
                             </a>
                             <p class="mt-4">Integrator IT Profesional siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
-                            <!-- <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            {{-- <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4 mb-4">
                                 <li class="list-inline-item"><a href="" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
                                 <li class="list-inline-item"><a href="" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                            </ul>end icon -->
+                            </ul> --}}
+                            <p><i class="uil uil-envelope"></i> admin@prodigisi.co.id</p>
+                            <p><i class="uil uil-phone"></i> +62 812-9398-8251</p>
+                            <p><i class="uil uil-whatsapp"></i> +62 812-9398-8251</p>
                         </div><!--end col-->
                 
                         <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mb-4">
@@ -35,13 +38,6 @@
                                 <li><a href="{{ route('service.index', $service->slug) }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> {{ $service->title }}</a></li>
                                 @endforeach
                             </ul>
-                        </div><!--end col-->
-
-                        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                            <h5 class="footer-head">Kontak</h5>
-                            <p class="mt-4">Email : admin@prodigisi.co.id</p>
-                            <p class="mt-4">Telepon : +62 812-9398-8251</p>
-                            <p class="mt-4">Whatsapp : +62 812-9398-8251</p>
                         </div><!--end col-->
                     </div><!--end row-->
                 </div>
