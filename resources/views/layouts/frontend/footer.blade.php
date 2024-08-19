@@ -26,6 +26,7 @@
                                             <li class="list-inline-item">
                                                 <a href="{{ $setting->$key }}" target="_blank" class="rounded">
                                                     <i data-feather="{{ $icon }}" class="fea icon-sm fea-social"></i>
+                                                    {{ $setting->key }}
                                                 </a>
                                             </li>
                                         @endif
