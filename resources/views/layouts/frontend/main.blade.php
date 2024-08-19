@@ -20,13 +20,13 @@
         <link href="{{ asset('frontend') }}/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
         <link href="{{ asset('frontend') }}/assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
         <!-- Bootstrap Css -->
-        <link href="{{ asset('frontend') }}/assets/css/bootstrap.min.css" class="theme-opt" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('frontend') }}/assets/css/bootstrap.min.css" class="theme-opt" rel="stylesheet"/>
         <!-- Icons Css -->
-        <link href="{{ asset('frontend') }}/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('frontend') }}/assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('frontend') }}/assets/css/icons.min.css" rel="stylesheet"/>
+        <link href="{{ asset('frontend') }}/assets/libs/@iconscout/unicons/css/line.css"rel="stylesheet" />
         @yield('css')
         <!-- Style Css-->
-        <link href="{{ asset('frontend') }}/assets/css/style.min.css" class="theme-opt" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('frontend') }}/assets/css/style.min.css" class="theme-opt" rel="stylesheet"/>
     </head>
 
     <body>
