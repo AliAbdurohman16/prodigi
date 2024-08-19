@@ -20,21 +20,36 @@ Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', [Backend\DashboardController::class, 'index'])->name('dashboard');
 
+    Route::group(['middleware' => ['user-access:superadmin,admin']], function () {
+        Route::resources([
+            'pages' => Backend\PageController::class,
+            'services' => Backend\ServiceController::class,
+            'product-categories' => Backend\Product\CategoryController::class,
+            'product-types' => Backend\Product\TypeController::class,
+            'products' => Backend\Product\ProductController::class,
+            'portfolio-categories' => Backend\Portfolio\CategoryController::class,
+            'portfolio-posts' => Backend\Portfolio\PostController::class,
+            'teams' => Backend\TeamController::class,
+            'partners' => Backend\PartnerController::class,
+            'clients' => Backend\ClientController::class,
+            'customers' => Backend\CustomerController::class,
+            'users' => Backend\UserController::class,
+            'setting' => Backend\SettingController::class,
+        ]);
+    });
+
+    // Route::group(['middleware' => ['role:admin']], function () {
+    //     Route::resources([
+    //         'portfolio-categories' => Backend\Portfolio\CategoryController::class,
+    //         'portfolio-posts' => Backend\Portfolio\PostController::class,
+    //         'teams' => Backend\TeamController::class,
+    //         'partners' => Backend\PartnerController::class,
+    //         'clients' => Backend\ClientController::class,
+    //     ]);
+    // });
+
     Route::resources([
-        'pages' => Backend\PageController::class,
-        'services' => Backend\ServiceController::class,
-        'product-categories' => Backend\Product\CategoryController::class,
-        'product-types' => Backend\Product\TypeController::class,
-        'products' => Backend\Product\ProductController::class,
-        'portfolio-categories' => Backend\Portfolio\CategoryController::class,
-        'portfolio-posts' => Backend\Portfolio\PostController::class,
-        'teams' => Backend\TeamController::class,
-        'partners' => Backend\PartnerController::class,
-        'clients' => Backend\ClientController::class,
-        'customers' => Backend\CustomerController::class,
-        'users' => Backend\UserController::class,
         'profile' => Backend\ProfileController::class,
         'change-password' => Backend\ChangePasswordController::class,
-        'setting' => Backend\SettingController::class,
     ]);
 });
