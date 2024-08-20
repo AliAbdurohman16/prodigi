@@ -18,7 +18,7 @@
 .slider-partner::after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 100px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -62,7 +62,7 @@
 .slider-client::after {
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 100px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -96,23 +96,23 @@
 @media (max-width: 576px) {
     .slider-partner:before,
     .slider-partner::after {
-        width: 70px;
+        width: 40px;
     }
 
     .slider-client:before,
     .slider-client::after {
-        width: 70px;
+        width: 40px;
     }
 }
 
 @media (max-width: 767px) {
     .slider-partner:before,
     .slider-partner::after {
-        width: 100px;
+        width: 60px;
     }
 
     .slider-client:before,
     .slider-client::after {
-        width: 100px;
+        width: 60px;
     }
 }

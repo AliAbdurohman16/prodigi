@@ -418,27 +418,29 @@
 
     <!-- Partners & Client start -->
     <section class="section pt-0">
-        <div class="row mt-4 pt-2 justify-content-center mb-3">
-            <div class="col-12">
-                <div class="section-title text-center mb-4 pb-2">
-                    <h4 class="title mb-4">Partner & Klien</h4>
-                    <p class="para-desc mx-auto text-muted mb-0">Bersama partner dan klien kami, kami membangun solusi inovatif yang mendukung pertumbuhan dan kesuksesan bersama.</p>
+        <div class="container">
+            <div class="row mt-4 pt-2 justify-content-center mb-3">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Partner & Klien</h4>
+                        <p class="para-desc mx-auto text-muted mb-0">Bersama partner dan klien kami, kami membangun solusi inovatif yang mendukung pertumbuhan dan kesuksesan bersama.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        
+            <div class="slider-partner">
+                <div class="slider-item-partner">
+                    @foreach ($partners as $partner)
+                    <img src="{{ asset('storage/partner/' . $partner->image) }}" class="avatar" alt="partner">
+                    @endforeach
                 </div>
-            </div><!--end col-->
-        </div><!--end row-->
-
-        <div class="slider-partner">
-            <div class="slider-item-partner">
-                @foreach ($partners as $partner)
-                <img src="{{ asset('storage/partner/' . $partner->image) }}" class="avatar" alt="partner">
-                @endforeach
             </div>
-        </div>
-        <div class="slider-client">
-            <div class="slider-item-client">
-                @foreach ($clients as $client)
-                <img src="{{ asset('storage/client/' . $client->image) }}" class="avatar" alt="client">
-                @endforeach
+            <div class="slider-client">
+                <div class="slider-item-client">
+                    @foreach ($clients as $client)
+                    <img src="{{ asset('storage/client/' . $client->image) }}" class="avatar" alt="client">
+                    @endforeach
+                </div>
             </div>
         </div>
     </section><!--end section-->
