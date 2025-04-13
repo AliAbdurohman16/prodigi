@@ -27,7 +27,7 @@
         </div>
 
         <!--Login button Start-->
-        <ul class="buy-button list-inline mb-0">
+        {{-- <ul class="buy-button list-inline mb-0">
             @if (Auth::user())
             <li class="list-inline-item mb-0">
                 <a href="{{ route('dashboard') }}">
@@ -43,12 +43,12 @@
                 </a>
             </li>
             @endif
-        </ul>
+        </ul> --}}
         <!--Login button End-->
 
         <div id="navigation">
             <!-- Navigation Menu-->   
-            <ul class="navigation-menu nav-light">
+            <ul class="navigation-menu nav-light nav-right">
                 <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="{{ route('/') }}" class="sub-menu-item">Beranda</a></li>
                 <li class="{{ request()->is('page/tentang') ? 'active' : '' }}"><a href="{{ route('page.index', 'tentang') }}" class="sub-menu-item">Tentang</a></li>
                 <li class="has-submenu parent-menu-item {{ request()->is('service/*') ? 'active' : '' }}">
