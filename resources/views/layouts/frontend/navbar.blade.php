@@ -54,7 +54,7 @@
                 <li class="has-submenu parent-menu-item {{ request()->is('service/*') ? 'active' : '' }}">
                     <a href="javascript:void(0)">Layanan</a><span class="menu-arrow"></span>
                     <ul class="submenu">
-                        <?php $services = App\Models\Service::all(); ?>
+                        <?php $services = App\Models\Service::orderBy('created_at', 'asc')->get(); ?>
                         @foreach ($services as $service)
                         <li class="{{ request()->is('service/' . $service->slug) ? 'active' : '' }}"><a href="{{ route('service.index', $service->slug) }}" class="sub-menu-item">{{ $service->title }}</a></li>
                         @endforeach
