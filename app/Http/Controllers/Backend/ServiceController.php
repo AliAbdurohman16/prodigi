@@ -15,7 +15,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $data['services'] = Service::all();
+        $data['services'] = Service::orderBy('created_at', 'asc')->get();
 
         return view('backend.service.index', $data);
     }
