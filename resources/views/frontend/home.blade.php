@@ -212,7 +212,7 @@
                 </div><!--end col-->
             </div><!--end row-->
             
-            <div class="p-4 rounded shadow bg-primary bg-gradient position-relative" style="z-index: 1;">
+            {{-- <div class="p-4 rounded shadow bg-primary bg-gradient position-relative" style="z-index: 1;">
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="progress-box">
@@ -268,7 +268,7 @@
                         </div><!--end process box-->
                     </div><!--end col-->
                 </div><!--end row -->
-            </div>
+            </div> --}}
 
             {{-- <div class="row mt-4 pt-2 position-relative" id="counter" style="z-index: 1;">
                 <div class="col-md-4 col-12 mt-4 pt-2">
