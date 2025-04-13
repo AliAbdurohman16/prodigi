@@ -386,7 +386,7 @@
             </div><!--end row-->
 
             <!-- Product Start -->
-            <div class="row mt-4 pt-2 justify-content-center mb-3">
+            {{-- <div class="row mt-4 pt-2 justify-content-center mb-3">
                 <div class="col-12">
                     <div class="section-title text-center mb-4 pb-2">
                         <h4 class="title mb-4">Produk</h4>
@@ -411,7 +411,7 @@
                 @else
                     <h3 class="text-center">Tidak ada produk.</h3>
                 @endif
-            </div>
+            </div> --}}
             <!-- Product End -->
         </div><!--end container-->
     </section><!--end section-->

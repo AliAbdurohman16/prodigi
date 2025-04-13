@@ -38,7 +38,7 @@
                             <h5 class="footer-head">Perusahaan</h5>
                             <ul class="list-unstyled footer-list mt-4">
                                 <li><a href="{{ route('page.index', 'tentang') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tentang</a></li>
-                                <li><a href="{{ route('product.index') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Produk</a></li>
+                                {{-- <li><a href="{{ route('product.index') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Produk</a></li> --}}
                                 <li><a href="{{ route('portfolio.index') }}" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Portofolio</a></li>
                             </ul>
                         </div><!--end col-->
