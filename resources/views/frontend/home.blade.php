@@ -270,7 +270,7 @@
                 </div><!--end row -->
             </div>
 
-            <div class="row mt-4 pt-2 position-relative" id="counter" style="z-index: 1;">
+            {{-- <div class="row mt-4 pt-2 position-relative" id="counter" style="z-index: 1;">
                 <div class="col-md-4 col-12 mt-4 pt-2">
                     <div class="counter-box text-center">
                         <img src="{{ asset('frontend') }}/assets/images/illustrator/Asset190.svg" class="avatar avatar-small" alt="">
@@ -294,7 +294,7 @@
                         <h3 class="counter-head text-muted h6">Project Complete</h3>
                     </div><!--end counter box-->
                 </div>
-            </div><!--end row-->
+            </div><!--end row--> --}}
         </div><!--end container-->
     </section><!--end section-->
     <!-- End -->
