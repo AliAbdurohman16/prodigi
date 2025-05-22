@@ -10,10 +10,22 @@
                             <a href="{{ route('/') }}" class="logo-footer">
                                 <img src="{{ asset('storage/setting/' . $setting->logo_white) }}" height="50" alt="logo">
                             </a>
-                            <p class="mt-4">Integrator IT Profesional siap memberikan solusi IT yang keren dan mudah untuk semua kebutuhan Anda.</p>
-                            <p><i class="uil uil-envelope"></i> {{ $setting->email }}</p>
-                            <p><i class="uil uil-phone"></i> {{ $setting->telepon }}</p>
-                            <p><i class="uil uil-whatsapp"></i> {{ $setting->whatsapp }}</p>
+                            <div class="contact-item">
+                                <i class="uil uil-location-point"></i>
+                                <span>Jl. Serua Bulak Raya Blok A Nomor 5, Bojongsari, Kota Depok, Jawa Barat</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="uil uil-envelope"></i>
+                                <span>admin@prodigisi.co.id</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="uil uil-phone"></i>
+                                <span>081293988251</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="uil uil-whatsapp"></i>
+                                <span>081293988251</span>
+                            </div>
                             @if ($setting->facebook || $setting->instagram || $setting->twitter || $setting->linkedin)
                                 <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                                     @foreach ([

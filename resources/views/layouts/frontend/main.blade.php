@@ -27,6 +27,24 @@
         @yield('css')
         <!-- Style Css-->
         <link href="{{ asset('frontend') }}/assets/css/style.min.css" class="theme-opt" rel="stylesheet"/>
+        <style>
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 10px;
+                color: #adb5bd; /* warna abu-abu terang (Tailwind: text-gray-300) */
+                font-size: 16px;
+                line-height: 1.5;
+                max-width: 400px; /* opsional biar nggak terlalu panjang */
+            }
+
+            .contact-item i {
+                min-width: 24px; /* supaya semua ikon rata kiri */
+                margin-top: 2px;
+                font-size: 18px;
+            }
+        </style>
     </head>
 
     <body>
