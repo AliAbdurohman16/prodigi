@@ -35,7 +35,7 @@
 
 <section class="section">
     <div class="container">
-        <div class="row justify-content-center">
+        {{-- <div class="row justify-content-center">
             <div class="col-12 filters-group-wrap">
                 <div class="filters-group">
                     <ul class="container-filter list-inline mb-0 filter-options text-center">
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
             </div><!--end col-->
-        </div><!--end row-->
+        </div><!--end row--> --}}
 
         <div id="grid" class="row">
             @foreach ($posts as $post)
