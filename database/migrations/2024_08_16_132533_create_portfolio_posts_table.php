@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('slug');
             $table->uuid('portfolio_category_id')->nullable()->index();
             $table->foreign('portfolio_category_id')->references('id')->on('portfolio_categories')->onDelete('cascade');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

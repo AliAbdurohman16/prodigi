@@ -56,7 +56,8 @@
                     <div class="card-body">
                         <div class="content">
                             <a href="javascript:void(0)" class="badge badge-link bg">{{ $post->Category->title }}</a>
-                            <h5 class="mt-3"><a href="{{ route('portfolio.show', $post->id) }}" class="text-dark title">{{ $post->title }}</a></h5>
+                            {{-- <h5 class="mt-3"><a href="{{ route('portfolio.show', $post->id) }}" class="text-dark title">{{ $post->title }}</a></h5> --}}
+                            <h5 class="mt-3"><a href="#" class="text-dark title">{{ $post->title }}</a></h5>
                         </div>
                     </div>
                 </div>
