@@ -1,5 +1,15 @@
 @extends('layouts.frontend.main')
 
+@section('css')
+<style>
+    .size-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+</style>
+@endsection
+
 @section('content')
 <!-- Hero Start -->
 <section class="bg-half-170 d-table w-100" style="background: url('{{ asset('frontend/assets/images/bg-detail.png') }}') center center;">
@@ -52,7 +62,7 @@
             @foreach ($posts as $post)
             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["{{ $post->Category->slug }}"]'>
                 <div class="card blog border-0 work-container work-primary work-classic shadow rounded-md overflow-hidden">
-                    <img src="{{ asset('storage/portfolio/' . $post->image) }}" class="img-fluid work-image" alt="image">
+                    <img src="{{ asset('storage/portfolio/' . $post->image) }}" class="img-fluid work-image size-image" alt="image">
                     <div class="card-body">
                         <div class="content">
                             <a href="javascript:void(0)" class="badge badge-link bg">{{ $post->Category->title }}</a>
