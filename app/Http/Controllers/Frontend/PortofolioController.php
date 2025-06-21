@@ -16,7 +16,7 @@ class PortofolioController extends Controller
     {
         $data = [
             'categories' => Category::all(),
-            'posts' => Post::paginate(9),
+            'posts' => Post::orderBy('created_at', 'asc')->paginate(9),
         ];
 
         return view('frontend.portfolio.index', $data);
