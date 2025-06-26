@@ -16,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $data['posts'] = Post::orderBy('created_at', 'asc');
+        $data['posts'] = Post::orderBy('created_at', 'asc')->get();
 
         return view('backend.portfolio.post.index', $data);
     }
