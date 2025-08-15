@@ -60,6 +60,12 @@
                         @endforeach
                     </ul>
                 </li>
+                <li class="has-submenu parent-menu-item">
+                    <a href="javascript:void(0)">Marketplace</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
+                        <li><a href="https://tokopedia.link/i08QTUFvQVb" target="_blank" class="sub-menu-item">Tokopedia</a></li>
+                    </ul>
+                </li>
                 {{-- <li class="{{ request()->is('product/*') ? 'active' : '' }}"><a href="{{ route('product.index') }}" class="sub-menu-item">Produk</a></li>
                 <li class="{{ request()->is('teams') ? 'active' : '' }}"><a href="{{ route('team.index') }}" class="sub-menu-item">Tim Kerja</a></li> --}}
                 <li class="{{ request()->is('portfolio/*') ? 'active' : '' }}"><a href="{{ route('portfolio.index') }}" class="sub-menu-item">Portofolio</a></li>
